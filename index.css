@@ -63,9 +63,6 @@
   height: 80px;
 }
 
-#FoulsScore{
-  display: flex;
-}
 
 #periodNumber {
   background: #080001;
@@ -79,7 +76,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 13px;
-  margin: 10px;
+  margin: 20px 10px;
 }
 
 #period {
@@ -95,4 +92,54 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#periodText {
+  margin: 0;
+}
+
+#FoulsScore{
+  display: flex;
+}
+
+.foulsBox {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foulsCount {
+  background: #080001;
+  color: #F94F6D;
+  font-size: 60px;
+  width: 50px;
+  height: 40px;
+  font-family: 'Cursed Timer ULiL', sans-serif;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13px;
+  margin: 10px;
+}
+
+.foulsButton {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foulsText {
+  margin: 0;
+}
+
+.timerBtn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
 }
