@@ -19,6 +19,7 @@
   color: #EEEEEE;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
+  border: 3px dotted red;
 }
 
 #home-text {
@@ -55,4 +56,43 @@
 }
 .btn:hover {
   background: #0F142B;
+}
+
+#newGameButton {
+  width: 100px;
+  height: 80px;
+}
+
+#FoulsScore{
+  display: flex;
+}
+
+#periodNumber {
+  background: #080001;
+  color: #F94F6D;
+  font-size: 60px;
+  width: 50px;
+  height: 40px;
+  font-family: 'Cursed Timer ULiL', sans-serif;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13px;
+  margin: 10px;
+}
+
+#period {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#periodButton{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
