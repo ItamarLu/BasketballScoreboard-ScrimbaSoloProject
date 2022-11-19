@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Basketball Scoreboard</title>
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
 </head>
@@ -20,30 +20,32 @@
       </div>
     </div>
     <div class="side">
-      <div>
-        <div>Timer</div>
-        <button class="btn timerBtn">S</button>
-        <button class="btn timerBtn">P</button>
-        <button class="btn timerBtn">R</button>
+      <div id="timerBox">
+        <div id="timer">00:00:00</div>
+        <div>
+          <button class="btn timerBtn">S</button>
+          <button class="btn timerBtn">P</button>
+          <button class="btn timerBtn">R</button>
+        </div>
       </div>
       <div id="period">
         <h4 id="periodText">Period</h4>
-        <div id="periodNumber">0</div>
-        <button class="btn" id="periodButton">+1</button>
+        <div id="periodNumber"></div>
+        <button class="btn" id="periodButton" onclick="periBtn()">+1</button>
       </div>
       <div id="FoulsScore">
           <div class="foulsBox">
             <h5 class="foulsText">FOULS</h5>
-            <div class="foulsCount">0</div>
-            <button class="btn foulsButton">+1</button>
+            <div id="foulsCountHome" class="foulsCount"></div>
+            <button class="btn foulsButton" onclick="foulsBtnH()">+1</button>
           </div>
           <div class="foulsBox">
             <h5 class="foulsText">FOULS</h5>
-            <div class="foulsCount">0</div>
-            <button class="btn foulsButton">+1</button>
+            <div id="foulsCountGuest" class="foulsCount"></div>
+            <button class="btn foulsButton" onclick="foulsBtnG()">+1</button>
           </div>
         </div>
-      <button class="btn" id="newGameButton">NEW GAME</button>
+      <button class="btn" id="newGameButton" onclick="newGame()">NEW GAME</button>
     </div>
     <div class="side">
       <h1 id="guest-text">GUEST</h1>
@@ -55,6 +57,7 @@
       </div>
     </div>
   </div>
+  <p id="obser">On this day 11/18/2022, I don't know how to make a timer, so I'll leave it like that for now, and learn more about JS.</p>
   <script src="index.js"></script>
 </body>
 </html>
